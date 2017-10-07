@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sudarsannalagandla.axdroid.ActList">
+
+    <RelativeLayout
+        android:layout_width="374dp"
+        android:layout_height="59dp"
+        android:background="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <Button
+            android:id="@+id/Back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ActivityList_Lbl"
+            android:background="?android:attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/ActivityList_Lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Back_Btn"
+            android:layout_toRightOf="@+id/Back_Btn"
+            android:text="Activity List"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <TabHost
+        android:layout_width="372dp"
+        android:layout_height="445dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="61dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="452dp"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/All Transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="394dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Sales Transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/All Activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>
